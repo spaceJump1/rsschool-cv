@@ -19,9 +19,10 @@ body {
     color: #4d2323;
 }
 
-.img {
+.profile-img {
     width: 200px;
     height: 250px;
+    border-radius: 10px;
 }
 
 .main-container {
@@ -39,6 +40,7 @@ body {
 
 .section {
     margin-bottom: 20px;
+    padding: 20px;
     flex-basis: 50%;
 }
 
@@ -51,6 +53,11 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+}
+
+.footer-logo {
+    width: 121px;
+    height: 45px;
 }
 
 .nav-link {
@@ -69,6 +76,7 @@ body {
 }
 
 .main-container {
+    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -83,6 +91,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #829985;
+    margin-bottom: 0.50rem;
 }
 
 .link {
@@ -117,9 +126,25 @@ li {
 
 .footer {
     background: #829985;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .footer-inf {
+    display: flex;
+    margin-left: 40px;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-copy {
+    margin-left: 50px;
+    color: #fff;
+}
+
+.footer-img {
     margin-left: 20px;
 }
 

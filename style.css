@@ -24,6 +24,10 @@ body {
     height: 250px;
 }
 
+.main-container {
+    display: flex;
+}
+
 .header-nav {
     background: #829985;
 }
@@ -35,6 +39,11 @@ body {
 
 .section {
     margin-bottom: 20px;
+    flex-basis: 50%;
+}
+
+#contacts {
+    margin-top: 24px;
 }
 
 .nav-list {

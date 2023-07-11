@@ -1,2 +1,2 @@
-https://github.com/spaceJump1/rsschool-cv/tree/rsschool-cv-html
-https://github.com/spaceJump1/rsschool-cv/blob/gh-pages/cv.md
+https://spacejump1.github.io/rsschool-cv/cv
+https://spacejump1.github.io/rsschool-cv/

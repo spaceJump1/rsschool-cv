@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
 <body>
+    <header>
+        <section  class="header-holder">
+            <h1 class="header-logo"><a href="#" class="header-logo-link">Brooklyn Public Library</a></h1>
+            <nav class="menubar">
+                <ul class="menubar-list">
+                    <li class="menubar-list-item"><a href="about" class="menubar-list-link">About</a></li>
+                    <li class="menubar-list-item"><a href="favorites" class="menubar-list-link">Favorites</a></li>
+                    <li class="menubar-list-item coffee"><a href="coffee_shop" class="menubar-list-link">Coffee shop</a></li>
+                    <li class="menubar-list-item contacts"><a href="contacts" class="menubar-list-link">Contacts</a></li>
+                    <li class="menubar-list-item library"><a href="library_card" class="menubar-list-link">Library Card</a></li>
+                </ul>
+            </nav>
+            <div class="menubar-user-item">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="welcome">
+            <img src="/images/Welcome.jpg" alt="welcome" class="welcome-img">
+            <div class="welcome-container">
+                <h2 class="welcome-p"><span class="welcome-word">WELCOME</span><br> TO THE BROOKLYN<br> <span class="welcome-library">LIBRARY</span></h2>
+            </div>
+            <div class="overlay"></div>
+        </section>
+    </main>
+    <footer></footer>
+
     <script src="index.js"></script>
 </body>
 </html>

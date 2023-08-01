@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Forum', cursive; */
+/* font-family: 'Inter', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-holder {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    height: 90px;
+    background: #000;
+}
+
+.header-logo {
+    margin-right: auto;
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.61px;
+}
+
+.header-logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menubar-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+
+.menubar-list-item {
+    margin-right: 28.9px;
+}
+
+.coffee {
+    padding-right: 0.6px;
+}
+
+.contacts {
+    padding-right: 2px;
+}
+
+.library {
+    padding-right: 14px;
+}
+
+.menubar-list-item:hover {
+    cursor: pointer;
+}
+
+.menubar-list-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.menubar-user-item {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-bottom: 3.1px;
+    background: #fff;
+}
+
+.welcome {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 2;
+}
+
+.welcome-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-container {
+    position: absolute;
+    height: 220px;
+    width: 600px;
+    top: 55%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: 3;
+    background: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-p {
+    font-family: Forum, cursive;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.welcome-word {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.welcome-library {
+    display: inline-block;
+    margin-left: 3px;
+}

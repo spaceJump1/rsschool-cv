@@ -140,3 +140,80 @@ body {
     display: inline-block;
     margin-left: 3px;
 }
+
+.about__header--holder {
+    position: relative;
+}
+
+.about__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.about__header--title {
+    font-family: Forum, cursive;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.about__header--line {
+    height: 1px;
+    width: 50px;
+    background-color: #000;
+    display: flex;
+    position: absolute;
+    left: 48.28%;
+    top: 60px;
+}
+
+.about__subscription {
+    margin-top: 61px;
+    text-align: center;
+}
+
+.about__subscription--text {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.about__carousel {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.about__carousel--item {
+    margin-right: 25px;
+}
+
+.about__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.about__pagination--container {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: transparent;
+    padding: 5px;
+}
+
+.about__pagination--btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #000;
+}
+
+.about__pagination--btn:hover {
+    background: #BB945F;
+}

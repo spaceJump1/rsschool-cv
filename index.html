@@ -1,63 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="style.scss"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css"/>
 </head>
 <body>
-    <header>
-        <section  class="header-holder">
-            <h1 class="header-logo"><a href="#" class="header-logo-link">Brooklyn Public Library</a></h1>
-            <nav class="menubar">
-                <ul class="menubar-list">
-                    <li class="menubar-list-item"><a href="#about" class="menubar-list-link">About</a></li>
-                    <li class="menubar-list-item"><a href="#favorites" class="menubar-list-link">Favorites</a></li>
-                    <li class="menubar-list-item coffee"><a href="#coffee_shop" class="menubar-list-link">Coffee shop</a></li>
-                    <li class="menubar-list-item contacts"><a href="#contacts" class="menubar-list-link">Contacts</a></li>
-                    <li class="menubar-list-item library"><a href="#library_card" class="menubar-list-link">Library Card</a></li>
-                </ul>
-            </nav>
-            <div class="menubar-user-item">
-                <i class="fa-solid fa-user"></i>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section class="welcome">
-            <img src="/images/Welcome.jpg" alt="welcome" class="welcome-img">
-            <div class="welcome-container">
-                <h2 class="welcome-p"><span class="welcome-word">WELCOME</span><br> TO THE BROOKLYN<br> <span class="welcome-library">LIBRARY</span></h2>
-            </div>
-            <div class="overlay"></div>
-        </section>
-        <section id="about" class="about">
-            <div class="about__header--holder">
-                <div class="about__header">
-                        <h2 class="about__header--title">About</h2>
-                </div>
-                <div class="about__header--line"></div>
-            </div>
-            <div class="about__subscription">
-                <p class="about__subscription--text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
-            </div>
-            <div class="about__carousel">
-                <img src="/images/carousel/image 1.jpg" alt="person" class="about__carousel--item">
-                <img src="/images/carousel/image 2 1.jpg" alt="sculpture" class="about__carousel--item">
-                <img src="/images/carousel/image 3 1.jpg" alt="books" class="about__carousel--item">
-            </div>
-            <div class="about__pagination">
-                <div class="about__pagination--container"><button class="about__pagination--btn"></button></div>
-                <div class="about__pagination--container"><button class="about__pagination--btn"></button></div>
-                <div class="about__pagination--container"><button class="about__pagination--btn"></button></div>
-            </div>
-        </section>
-    </main>
-    <footer></footer>
+<header>
+    <section class="header-holder">
+        <h1 class="header-logo">
+            <a href="#" class="header-logo-link">Brooklyn Public Library</a>
+        </h1>
+        <nav class="menubar">
+            <ul class="menubar-list">
+                <li class="menubar-list-item">
+                    <a href="#about" class="menubar-list-link">About</a>
+                </li>
+                <li class="menubar-list-item">
+                    <a href="#favorites" class="menubar-list-link">Favorites</a>
+                </li>
+                <li class="menubar-list-item coffee">
+                    <a href="#coffee_shop" class="menubar-list-link">Coffee shop</a>
+                </li>
+                <li class="menubar-list-item contacts">
+                    <a href="#contacts" class="menubar-list-link">Contacts</a>
+                </li>
+                <li class="menubar-list-item library">
+                    <a href="#library_card" class="menubar-list-link">Library Card</a>
+                </li>
+            </ul>
+        </nav>
 
-    <script src="index.js"></script>
+        <div class="menubar-user-item">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M13.9999 28C21.7319 28 27.9999 21.732 27.9999 14C27.9999 6.26801 21.7319 0 13.9999 0C6.26789 0 -0.00012207 6.26801 -0.00012207 14C-0.00012207 21.732 6.26789 28 13.9999 28ZM18.6666 7.77778C18.6666 10.3551 16.5773 12.4444 13.9999 12.4444C11.4226 12.4444 9.33327 10.3551 9.33327 7.77778C9.33327 5.20045 11.4226 3.11111 13.9999 3.11111C16.5773 3.11111 18.6666 5.20045 18.6666 7.77778ZM21.7777 21.7778C21.7777 19.715 20.9582 17.7367 19.4996 16.2781C18.041 14.8194 16.0627 14 13.9999 14C11.9371 14 9.9588 14.8194 8.50018 16.2781C7.04157 17.7367 6.22212 19.715 6.22212 21.7778L13.9999 21.7778H21.7777Z"
+                      fill="white"/>
+            </svg>
+        </div>
+
+    </section>
+</header>
+<main>
+    <section class="welcome">
+        <img src="/images/Welcome.jpg" alt="welcome" class="welcome-img"/>
+        <div class="welcome-container">
+            <h2 class="welcome-p">
+                <span class="welcome-word">WELCOME</span><br/>
+                TO THE BROOKLYN<br/>
+                <span class="welcome-library">LIBRARY</span>
+            </h2>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <section id="about" class="about">
+        <div class="about__header--holder element__header--holder">
+            <div class="about__header element__header">
+                <h2 class="about__header--title element__header--title">About</h2>
+            </div>
+            <div class="about__header--line element__header--line"></div>
+        </div>
+
+        <div class="about__subscription">
+            <p class="about__subscription--text">
+                The Brooklyn Library is a free workspace, a large number of books
+                and a cozy coffee shop inside
+            </p>
+        </div>
+        <div class="about__carousel">
+            <img
+                    src="/images/carousel/image 1.jpg"
+                    alt="person"
+                    class="about__carousel--item"/>
+            <img
+                    src="/images/carousel/image 2 1.jpg"
+                    alt="sculpture"
+                    class="about__carousel--item"/>
+            <img
+                    src="/images/carousel/image 3 1.jpg"
+                    alt="books"
+                    class="about__carousel--item"/>
+        </div>
+        <div class="about__pagination">
+            <div class="about__pagination--container">
+                <button class="about__pagination--btn"></button>
+            </div>
+            <div class="about__pagination--container">
+                <button class="about__pagination--btn"></button>
+            </div>
+            <div class="about__pagination--container">
+                <button class="about__pagination--btn"></button>
+            </div>
+        </div>
+    </section>
+    <section class="favorites" id="favorites">
+        <div class="favorites__header--holder element__header--holder">
+            <div class="element__header">
+                <h2 class="element__header--title">Favorites</h2>
+            </div>
+            <div class="element__header--line"></div>
+        </div>
+        <div class="favorites__subscription">
+            <p class="favorites__subscription--text">Pick favorites of season</p>
+            <div class="favorites__radio--holder">
+                <div class="favorites__radio--container">
+                    <input class="favorites__radio--btn" name="season" id="winter" type="radio"/>
+                    <label class="favorites__radio--header" for="winter">
+                        <span class="favorites__radio--text">Winter</span>
+                    </label>
+                </div>
+
+                <div class="favorites__radio--container">
+                    <input class="favorites__radio--btn" name="season" id="spring" type="radio"/>
+                    <label class="favorites__radio--header" for="spring">
+                        <span class="favorites__radio--text">Spring</span>
+                    </label>
+                </div>
+
+                <div class="favorites__radio--container">
+                    <input class="favorites__radio--btn" name="season" id="summer" type="radio"/>
+                    <label class="favorites__radio--header" for="summer">
+                        <span class="favorites__radio--text">Summer</span>
+                    </label>
+                </div>
+
+                <div class="favorites__radio--container">
+                    <input class="favorites__radio--btn" name="season" id="autumn" type="radio"/>
+                    <label class="favorites__radio--header" for="autumn">
+                        <span class="favorites__radio--text">Autumn</span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <div class="books__cards">
+            <div class="books__cards-item">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">THE BOOK EATERS</h4>
+                    <h5 class="book__author">By Sunyi Dean</h5>
+                    <p class="book__subs">An unusual sci-fi story about a book eater woman who tries desperately to
+                        save her
+                        dangerous
+                        mind-eater son from tradition and certain death. Complete with dysfunctional family values,
+                        light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart. </p>
+                    <img src="./images/books/the%20book%20eaters.jpg" alt="the book eaters" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Cackle</h4>
+                    <h5 class="book__author">By Rachel Harrison</h5>
+                    <p class="book__subs">Are your Halloween movies of choice The Witches of Eastwick and Practical
+                        Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint
+                        town in upstate New York and befriends a beautiful witch.</p>
+                    <img src="./images/books/cackle.jpg" alt="cackle" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Dante: Poet of the Secular World</h4>
+                    <h5 class="book__author">By Erich Auerbach</h5>
+                    <p class="book__subs">Auerbach's engaging book places the 'Comedy' within the tradition of epic,
+                        tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the
+                        individual and his drama of soul into something of divine significance—an inspired introduction
+                        to Dante's main themes.</p>
+                    <img src="./images/books/dante.jpg" alt="dante" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">The Last Queen</h4>
+                    <h5 class="book__author">By Clive Irving</h5>
+                    <p class="book__subs">A timely and revelatory new biography of Queen Elizabeth (and her family)
+                        exploring how the Windsors have evolved and thrived as the modern world has changed around
+                        them.</p>
+                    <img src="./images/books/the%20last%20queen.jpg" alt="the last queen" class="book__cover">
+                    <button type="submit" class="book__btn" disabled>Own</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">The Body</h4>
+                    <h5 class="book__author">By Stephen King</h5>
+                    <p class="book__subs">Powerful novel that takes you back to a nostalgic time, exploring both the
+                        beauty and danger and loss of innocence that is youth.</p>
+                    <img src="./images/books/the%20last%20queen.jpg" alt="the last queen" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Carry: A Memoir of Survival on Stolen Land</h4>
+                    <h5 class="book__author">By Toni Jenson</h5>
+                    <p class="book__subs">This memoir about the author's relationship with gun violence feels both
+                        expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+                    <img src="./images/books/carry.jpg" alt="carry" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Days of Distraction</h4>
+                    <h5 class="book__author">By Alexandra Chang</h5>
+                    <p class="book__subs">A sardonic view of Silicon Valley culture, a meditation on race, and a journal
+                        of displacement and belonging, all in one form-defying package of spare prose.</p>
+                    <img src="./images/books/days%20of%20distraction.jpg" alt="days of distraction" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Dominicana</h4>
+                    <h5 class="book__author">By Angie Cruz</h5>
+                    <p class="book__subs">A fascinating story of a teenage girl who marries a man twice her age with the
+                        promise to bring her to America. Her marriage is an opportunity for her family to eventually
+                        immigrate. For fans of Isabel Allende and Julia Alvarez.</p>
+                    <img src="./images/books/dominicana.jpg" alt="dominicana" class="book__cover">
+                    <button type="submit" class="book__btn" disabled>Own</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Crude: A Memoir</h4>
+                    <h5 class="book__author">By Pablo Fajardo & Sophie Tardy-Joubert</h5>
+                    <p class="book__subs">Drawing and color by Damien Roudeau | This book illustrates the struggles of a
+                        group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their
+                        oil fields did to the Amazon and her people</p>
+                    <img src="./images/books/crude.jpg" alt="crude" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Let My People Go Surfing</h4>
+                    <h5 class="book__author">By Yvon Chouinard</h5>
+                    <p class="book__subs">Chouinard—climber, businessman, environmentalist—shares tales of courage and
+                        persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My
+                        People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business
+                        Unusual.</p>
+                    <img src="./images/books/let%20my%20ppl.jpg" alt="let my ppl go surfing" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">The Octopus Museum: Poems</h4>
+                    <h5 class="book__author">By Brenda Shaughnessy</h5>
+                    <p class="book__subs">This collection of bold and scathingly beautiful feminist poems imagines what
+                        comes after our current age of environmental destruction, racism, sexism, and divisive
+                        politics.</p>
+                    <img src="./images/books/the%20octopus.jpg" alt="the octopus museum: poems" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Shark Dialogues: A Novel</h4>
+                    <h5 class="book__author">By Kiana Davenport</h5>
+                    <p class="book__subs">An epic saga of seven generations of one family encompasses the tumultuous
+                        history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale
+                        of villains and dreamers, queens and revolutionaries, lepers and healers.</p>
+                    <img src="./images/books/shark%20dialogues.jpg" alt="shark dialogues: a novel" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Casual Conversation</h4>
+                    <h5 class="book__author">By Renia White</h5>
+                    <p class="book__subs">White's impressive debut collection takes readers through and beyond the
+                        concepts of conversation and the casual - both what we say to each other and what we don't,
+                        examining the possibilities around how we construct and communicate identity. </p>
+                    <img src="./images/books/casual%20conversation.jpg" alt="casual conversation" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">The Great Fire</h4>
+                    <h5 class="book__author">By Lou Ureneck</h5>
+                    <p class="book__subs">The harrowing story of an ordinary American and a principled Naval officer
+                        who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter
+                        of a million refugees from the Armenian Genocide</p>
+                    <img src="./images/books/the%20great%20fire.jpg" alt="the great fire" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Rickey: The Life and Legend</h4>
+                    <h5 class="book__author">By Howard Bryant</h5>
+                    <p class="book__subs">With the fall rolling around, one can't help but think of baseball's
+                        postseason coming up! And what better way to prepare for it than reading the biography of one of
+                        the game's all-time greatest performers, the Man of Steal, Rickey Henderson?</p>
+                    <img src="./images/books/rickey.jpg" alt="rickey" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+            <div class="books__cards-item later">
+                <h3 class="item__header">Staff Picks</h3>
+                <div class="item__line"></div>
+                <div class="book__info">
+                    <h4 class="book__title">Slug: And Other Stories</h4>
+                    <h5 class="book__author">By Megan Milks</h5>
+                    <p class="book__subs">Exes Tegan and Sara find themselves chained together by hairballs of
+                        codependency. A father and child experience the shared trauma of giving birth to gods from their
+                        wounds.</p>
+                    <img src="./images/books/slug.jpg" alt="slug" class="book__cover">
+                    <button type="submit" class="book__btn">Buy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer></footer>
+<script src="index.js"></script>
 </body>
 </html>

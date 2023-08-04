@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* font-family: 'Forum', cursive; */
 /* font-family: 'Inter', sans-serif; */
 
@@ -25,7 +25,7 @@ body {
 
 .header-logo {
     margin-right: auto;
-    font-family: 'Forum', cursive;
+    font-family: "Forum", cursive;
     font-size: 30px;
     line-height: 50px;
     letter-spacing: 0.61px;
@@ -41,7 +41,6 @@ body {
     flex-direction: row;
     list-style: none;
 }
-
 
 .menubar-list-item {
     margin-right: 28.9px;
@@ -64,7 +63,7 @@ body {
 }
 
 .menubar-list-link {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 50px;
@@ -72,17 +71,8 @@ body {
     text-decoration: none;
 }
 
-
 .menubar-user-item {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    margin-bottom: 3.1px;
-    background: #fff;
+    margin-top: 5px;
 }
 
 .welcome {
@@ -96,7 +86,11 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+    );
     z-index: 2;
 }
 
@@ -141,24 +135,28 @@ body {
     margin-left: 3px;
 }
 
-.about__header--holder {
+.about__header--holder,
+.element__header--holder {
     position: relative;
 }
 
-.about__header {
+.about__header,
+.element__header {
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
 
-.about__header--title {
+.about__header--title,
+.element__header--title {
     font-family: Forum, cursive;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: 2px;
 }
 
-.about__header--line {
+.about__header--line,
+.element__header--line {
     height: 1px;
     width: 50px;
     background-color: #000;
@@ -215,5 +213,174 @@ body {
 }
 
 .about__pagination--btn:hover {
-    background: #BB945F;
+    background: #bb945f;
 }
+
+.favorites__header--holder {
+    margin-top: 55px;
+}
+
+.favorites__subscription {
+    margin-top: 53px;
+    margin-left: 20px;
+}
+
+.favorites__subscription--text {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.favorites__radio--holder {
+    margin-top: 25px;
+    display: flex;
+}
+
+.favorites__radio--header {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.favorites__radio--btn {
+    margin-top: 11px;
+    width: 18px;
+    height: 18px;
+    accent-color: #000000;
+}
+
+.favorites__radio--btn:checked + .favorites__radio--header {
+    font-weight: 700;
+}
+
+.favorites__radio--text {
+    display: block;
+    padding-left: 20px;
+}
+
+.favorites__radio--container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 90px;
+}
+
+.books__cards {
+    margin: 30px 0 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 200px;
+}
+
+.books__cards-item {
+    position: relative;
+    border: 1px solid black;
+    height: 556px;
+    width: 550px;
+}
+
+.item__header {
+    margin: 15px 0 0 19px;
+    font-family: Forum, cursive;
+    font-size: 20px;
+    line-height: 39px;
+    letter-spacing: 2px;
+}
+
+.item__line {
+    margin-left: 19px;
+    width: 60px;
+    height: 1px;
+    background-color: red;
+}
+
+.book__title {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Inter, sans-serif;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.book__author {
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-left: 19px;
+}
+
+.book__subs {
+    font-family: Inter, sans-serif;
+    line-height: 40px;
+    letter-spacing: 1.4px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 350px;
+    text-transform: capitalize;
+}
+
+.books__cards-item:nth-child(2) .book__btn {
+    margin-top: 55px;
+}
+
+.books__cards-item:nth-child(3) .book__subs {
+    letter-spacing: 1.3px;
+    line-height: 40px;
+}
+
+.books__cards-item:nth-child(3) .book__btn {
+    margin-top: 15px;
+}
+
+.books__cards-item:last-child .book__subs {
+    letter-spacing: 1.3px;
+}
+
+.books__cards-item:last-child .book__btn {
+    margin-top: 95px;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+}
+
+.books__cards-item:last-child .book__btn:hover {
+    border: 1px solid #BB945F;
+    color: #BB945F;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.book__btn {
+    border: 2px solid #000;
+    background: none;
+    height: 30px;
+    width: 75px;
+    margin: 15px 0 0 19px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book__btn:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.book__cover {
+    position: absolute;
+    left: 359px;
+    top: 255px;
+    margin-left: 30px;
+}
+
+.later {
+    display: none;
+}
+
+
